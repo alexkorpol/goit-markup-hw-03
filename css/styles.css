@@ -6,7 +6,6 @@
   --gray-color: #757575;
   --bkgr-color: #2f303a;
   --border-color: #eeeeee;
-  --padd-standart: 94px;
   --margin-standart: 30px;
   --gap-picters: 30px;
 }
@@ -19,6 +18,10 @@ body {
   font-size: 14px;
   background-color: var(--white-color);
   letter-spacing: 0.03em;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 button {
@@ -167,7 +170,7 @@ ol {
 .hero {
   background-color: var(--bkgr-color);
 
-  padding-top: 186px;
+  padding-top: 200px;
   padding-bottom: 200px;
 }
 
@@ -212,11 +215,11 @@ ol {
 
 /*-----------------Our advantages---------------------*/
 .advanteges-section {
-  padding-top: var(--padd-standart);
+  padding-bottom: 0;
 }
-
 .advantages-list {
   display: flex;
+  /* padding-top: 94px; */
 }
 
 .advantages-list-item:not(:last-child) {
@@ -238,16 +241,21 @@ ol {
 }
 
 /*-----------------What do we do?---------------------*/
-.busy-section {
-  padding: var(--padd-standart) 0;
-}
 
-.section-our-team {
+.section-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: var(--first-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.title-our-team {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--first-color);
+  margin-bottom: 50px;
 }
 
 .busy-list {
@@ -259,12 +267,11 @@ ol {
 
 .our-team {
   background-color: #f5f4fa;
-  padding: var(--padd-standart) 0;
 }
 
-.team-title {
+/* .team-title {
   padding-top: 50px;
-}
+} */
 
 .our-team-list {
   display: flex;
@@ -345,7 +352,9 @@ ol {
 }
 
 /*---------------------portfolio----------------*/
-.btn-stile {
+.btn-style {
+  border-radius: 4px;
+  border: none;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -354,11 +363,11 @@ ol {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-color);
-  margin: 0px 8px;
+  padding: 6px 22px;
 }
 
-.btn-stile:hover,
-.btn-stile:focus {
+.btn-style:hover,
+.btn-style:focus {
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -367,25 +376,21 @@ ol {
 }
 
 .btn-list {
+  gap: 8px;
   display: flex;
   justify-content: center;
-  padding-top: var(--padd-standart);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .picters-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  flex-basis: calc((100%-2 * 30px) / 3);
-  padding-bottom: var(--padd-standart);
+  flex-basis: calc((100% - 60px) / 3);
   gap: 30px;
 }
 
 .under-pict-border {
-  padding: 24px 20px;
-  width: 370px;
-  height: 110px;
+  padding: 20px 24px;
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
@@ -399,22 +404,7 @@ ol {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--first-color);
-}
-
-.project-title {
-  padding-top: 20px;
-}
-
-.project-text {
-  padding-bottom: 20px;
-}
-
-.item-of-job {
-  width: 370px;
-}
-
-.img-of-job {
-  display: block;
+  margin-bottom: 4px;
 }
 
 .project-text {
